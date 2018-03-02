@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - clwh@localhost" uuid="e3a1b1ef-3ddd-4d39-ab65-092603b208af">
+    <database-info product="MySQL" version="5.0.27-community-nt" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.40 ( Revision: 402933ef52cad9aa82624e80acbea46e3a701ce6 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="library"/>
+    <table name="book" schema="" catalog="library" type="TABLE">
+      <column name="price" sqlType="DOUBLE" precision="11" scale="0" nullable="true" jdbcType="8"/>
+      <column name="stock" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="publish_time" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
+      <column name="publisher" sqlType="VARCHAR" precision="1024" scale="0" nullable="true" jdbcType="12"/>
+      <column name="translator" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="author" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="type" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="name" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12"/>
+      <column name="id" sqlType="VARCHAR" precision="32" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="borrow" schema="" catalog="library" type="TABLE">
+      <column name="is_back" sqlType="SMALLINT" precision="5" scale="0" nullable="true" jdbcType="5"/>
+      <column name="back_date" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
+      <column name="borrow_date" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
+      <column name="reader_id" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="book_id" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" def="Jyc="/>
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="reader" schema="" catalog="library" type="TABLE">
+      <column name="days_num" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="max_num" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="sex" sqlType="VARCHAR" precision="2" scale="0" nullable="true" jdbcType="12"/>
+      <column name="type" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12"/>
+      <column name="name" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="user" schema="" catalog="library" type="TABLE">
+      <column name="is_admin" sqlType="SMALLINT" precision="5" scale="0" nullable="true" jdbcType="5"/>
+      <column name="pass" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="name" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12"/>
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+  </data-source>
+</component>
