@@ -7,5 +7,11 @@
       <schema-pattern>library.*</schema-pattern>
       <default-schemas>library.*</default-schemas>
     </data-source>
+    <data-source name="Django default" uuid="1fcd8221-8552-4813-a22a-03e9e16ce970">
+      <user-name>root</user-name>
+      <user-password>dfd8dfc5dfc5dfde</user-password>
+      <schema-pattern>clwh.*</schema-pattern>
+      <default-schemas>clwh.*</default-schemas>
+    </data-source>
   </component>
 </project>
